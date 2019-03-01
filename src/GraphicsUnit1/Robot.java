@@ -26,7 +26,12 @@ class Robot extends Canvas
       window.setColor(Color.BLUE);
 
       window.drawString("Robot LAB ", 35, 35 );
-
+      window.setColor(Color.GRAY);
+      
+      head(window);
+      upperBody(window);
+      lowerBody(window);
+      
       //call head method
       
       //call other methods
@@ -35,19 +40,22 @@ class Robot extends Canvas
 
    public void head( Graphics window )
    {
-      window.setColor(Color.YELLOW);
-
-      window.fillOval(300, 100, 200, 100);
-
-
+      window.setColor(Color.GRAY);
 		//add more code here
+      window.fillRect(330, 220, 10, 100);
+      window.fillRect(380, 220, 10, 100);
+      window.fillRect(270, 250, 50, 10);
+      window.fillRect(300, 240, 100, 75);
 				
    }
 
    public void upperBody( Graphics window )
    {
-
 		//add more code here
+      window.fillRect(300, 240, 100, 120);
+      window.fillRect(400, 250, 50, 10);
+      window.fillRect(240, 240, 120, 120);
+      window.fillRect(300, 240, 120, 120);
    }
 
    public void lowerBody( Graphics window )
