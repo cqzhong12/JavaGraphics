@@ -41,19 +41,18 @@ public class ShapePanel extends JPanel
 		window.drawRect(20,20,getWidth()-40,getHeight()-40);
 		window.setFont(new Font("TAHOMA",Font.BOLD,18));
 		window.drawString("CREATE YOUR OWN SHAPE!",40,40);
-                window.setColor(Color.BLACK);
-                window.fillOval(300, 200, 200, 200);
-                window.fillOval(240, 150, 100, 100);
-                window.fillOval(460, 150, 100, 100);
-
-
+               
 		//instantiate a Shape
+                Shape mickey = new Shape(300,200,200,200,Color.RED);
 		//tell your shape to draw
-
+                mickey.draw(window);
 		//instantiate a Shape
+                Shape minney = new Shape(200,100,200,200,Color.PINK);
 		//tell your shape to draw
-
-		//instantiate a Shape
+                minney.draw(window);
+                //instantiate a Shape
+                Shape s = new Shape(400,300,200,200,Color.BLUE);
 		//tell your shape to draw
+                s.draw(window);
 	}
 }
