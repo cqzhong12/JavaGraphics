@@ -56,8 +56,8 @@ class Robot extends Canvas
        
        //add more code here       
        window.setColor(Color.BLACK);
-       window.drawArc(250, 225, 200, 50, 270, -90);
-       window.drawArc(450, 225, 200, 50, 90, 90);
+       window.drawLine(280, 215, 350, 228);
+       window.drawLine(450, 228, 510, 215);
    }
 
    public void lowerBody( Graphics window )
