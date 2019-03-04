@@ -35,7 +35,7 @@ class Robot extends Canvas
 
    public void head( Graphics window )
    {
-      window.setColor(Color.YELLOW);
+      window.setColor(Color.LIGHT_GRAY);
 
       window.fillOval(300, 100, 200, 100);
 

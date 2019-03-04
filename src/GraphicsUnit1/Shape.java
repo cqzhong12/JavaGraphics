@@ -41,8 +41,8 @@ public class Shape
       //    ()
 
         window.fillOval(xPos, yPos, width, height);
-        window.fillOval(xPos+width-40, ypos-50, width/2, height/2);
-        window.fillOval(xPos-60, ypos-50, width/2, height/2);
+        window.fillOval(xPos+width-40, yPos-50, width/2, height/2);
+        window.fillOval(xPos-60, yPos-50, width/2, height/2);
 
    }
 
