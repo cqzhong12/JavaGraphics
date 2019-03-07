@@ -1,4 +1,4 @@
-package GraphicsUnit1;
+package GraphicsUnit2;
 
 //(c) A+ Computer Science
 //www.apluscompsci.com
@@ -8,7 +8,9 @@ package GraphicsUnit1;
 //Class -
 //Lab  -
 
-import javax.swing.JFrame;
+import javax.swing.JFrame; 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class GraphicsRunner extends JFrame
 {
@@ -17,14 +19,13 @@ public class GraphicsRunner extends JFrame
 
 	public GraphicsRunner()
 	{
-		super("Graphics Runner");
+		super("MAKE YOUR OWN SHAPE");
 
 		setSize(WIDTH,HEIGHT);
 
-		getContentPane().add(new BigHouse());
-		
-		//add other classes to run them 
-		//BigHouse, Robot, or ShapePanel 
+		//getContentPane().add(new ShapePanel());
+
+		getContentPane().add(new MovingShapePanel());
 
 		setVisible(true);
 
